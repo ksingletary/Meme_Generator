@@ -1,4 +1,80 @@
-img {
-    width: 50%;
-    height: 50%;
+/* inputs and button to submit meme */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(228, 169, 75);
 }
+
+h1 {
+    text-align: center;
+    margin-right: 4%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200%;
+    text-decoration: underline;
+}
+
+input{
+    width: 70%;
+    padding: 4px 6px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 25px 25px 25px 35px ;
+}
+
+label {
+    margin-right: 10em;
+}
+
+
+button {
+    background-color: rgb(200, 219, 246);
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(180, 107, 121);
+    color: rgb(174, 223, 243);
+    cursor: pointer;
+  }
+
+/* image and container construction */
+
+#container {
+    color: white;
+    width: 100%;
+    display: flex;
+}
+
+
+.meme, img {
+    justify-content: center;
+    position: relative;
+    max-width: 90%;
+    z-index: 2;
+    margin-top: 4%;
+    border-radius: 25px 25px 25px 35px ;
+    margin: 0px 0px 15px 15px;
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.top {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: #ffffff;
+    z-index: 3;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: #ffffff;
+    z-index: 3;
+}
+
+
