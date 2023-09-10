@@ -121,15 +121,15 @@ button:hover {
 .meme:hover img{
     display: block;    
     opacity: .3;
-    transition: all 600ms linear;
+    transition: all 650ms linear;
 }
 
 .delimg {
     display: none;
-    width: 220px; 
-    height: 220px; 
+    width: 15vw; 
+    height: 15vh; 
     position: absolute; 
-    top: 26%; 
+    top: 38%; 
     left: 35%; 
     cursor: pointer;
 }

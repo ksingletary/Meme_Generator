@@ -9,11 +9,22 @@ const myUrl = document.getElementById('submitter'); //form submission
 const button = document.querySelector('button');
 let mainDiv = document.getElementById('container');
 
+const imageUrl=document.getElementById('imgURL').value;
+const topTextInput=document.getElementById('top').value;
+const bottomTextInput=document.getElementById('bottom').value;
 
 function submitMyMeme() {
     myUrl.addEventListener('submit', function(evt){
         evt.preventDefault();                                   // submit event by default refreshes 
+        
+        const imageUrl=document.getElementById('imgURL').value;
+        const topTextInput=document.getElementById('top').value;
+        const bottomTextInput=document.getElementById('bottom').value;
 
+        if (imageUrl==='' || topTextInput==='' || bottomTextInput===''){
+            alert('Please fill all areas to complete your meme!')
+        } else {
+        
         const myMeme = document.createElement('div')
         myMeme.classList.add('meme');                                //creating the image and setting url
         let theImg = document.createElement('img');                  //to the srf           
@@ -60,9 +71,11 @@ function submitMyMeme() {
         myMeme.addEventListener('click', function(evt){
             myMeme.remove();                                            //if clicked, delete it from page
         })
-       
+    }
     })
+    
 }
+
 
 submitMyMeme();
         
