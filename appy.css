@@ -77,7 +77,6 @@ button:hover {
 
 .meme, img {
     font-size: 25px;
-    width: 50%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     position: relative;
@@ -101,7 +100,7 @@ button:hover {
     font-weight: bolder;
     -webkit-text-stroke: 3.3px black;
     font-size: 35px;
-    width: 100%;
+    max-width: 45%;
 }
 
 .bottom {
@@ -113,7 +112,7 @@ button:hover {
     font-weight: bolder;
     -webkit-text-stroke: 3.3px black;
     font-size: 35px;
-    width: 100%;
+    max-width: 45%;
 }
 
 /* hover for delete meme */
